@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CnTPCBuilding</title>
+
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/Contact.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="Header" class="initial">
+            <div id="Header-Wrapper">
+                <div id="Header-Text-Wrapper">
+                    <a href="./index.html">
+                        <div class="navElement">Home</div>
+                    </a>
+                    <a href="./Modding.html">
+                        <div class="navElement">Modding Gear</div>
+                    </a>
+                    <a href="./Services.html">
+                        <div class="navElement">Services</div>
+                    </a>
+                    <a href="./Gallery.html">
+                        <div class="navElement">Gallery</div>
+                    </a>
+                    <a href="./Contact.php">
+                        <div class="navElement">Contact</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Header-Logo-Wrapper">
+            <div id="Logo">
+                <div class="png-logo"><a href="./index.html"></a></div>
+            </div>
+            <!-- de modificat pngul daca mai este nevoie -->
+            <button id="Nav-Button">
+                <img src="./Svg_items/menu-white.svg" alt="" />
+            </button>
+        </div>
+
+        <div id="Header-Aux"></div>
+    </header>
+
+
+
+    <div id="Content">
+
+        <div id="Content-Wrapper">
+
+            <div class="Title">
+                <h1>Contact us</h1>
+            </div>
+
+
+
+
+            <div id="Form-Wrapper">
+                <form action="" method="post">
+                    <textarea class="form-element" name="email" id="Email" cols="80" rows="1"
+                        placeholder="Email"></textarea>
+                        <span class="error" id="email-error"><?= $emailErr  ?></span>
+
+                    <textarea class="form-element" name="name" id="Name" cols="80" rows="1"
+                        placeholder="Name"></textarea>
+                        <span class="error" id="name-error"><?= $nameErr  ?></span>
+
+                    <textarea class="form-element" name="message" id="Message" cols="80" rows="15"
+                        placeholder="Tell us your message"></textarea>
+                    <button type="submit" class="send-button" name="submit">Send</button>
+                        <span class="error" id="message-error"><?= $messageErr  ?></span>
+                </form>
+            </div>
+
+            <div id="Info-Wrapper">
+                <div class="info-element" id="Info-Text">The phone contact hours are between 3 PM and 10 PM but you can contact us through mail, message or form at anytime.</div>
+                <div class="info-element" id="Address">Iasi, Romania</div>
+                <div class="info-element" id="Phone">Phone: &nbsp &nbsp 0741549772 <br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 0722755212</div>
+                <div class="info-element" id="Mail">Mail: &nbsp &nbsp CnTPCB@gmail.com</div>
+                <div class="info-element" id="Links-Wrapper">
+                    
+                    <div class="Link" id="First-Link"><a href="https://www.facebook.com/Cntpcb-105156764400026/"><img src="./Svg_items/facebook_logo(2019).svg" alt=""></a></div>
+                    <div class="Link"><a href="https://www.olx.ro/oferta/asamblare-configurare-suport-tehnic-pc-modding-IDcyDNE.html"><img src="./Svg_items/olx-logo-vector.svg" alt=""></a></div>
+                    <div class="Link"><a href="https://twitter.com/CTpcb"><img src="./Svg_items/twitter.svg" alt=""></a></div>
+                
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div id="Footer-Wrapper">
+            <div class="section" id="Explore">
+                <h3 class="title">Explore</h3>
+                <div class="section-wrapper">
+                    <a href="./index.html">Home</a>
+                    <a href="./Modding.html">Modding Gear</a>
+                    <a href="./Services.html">Services</a>
+                    <a href="./Gallery.html">Gallery</a>
+                    <a href="./Contact.php">Contact</a>
+                </div>
+            </div>
+
+            <!-- <div class="section" id="Visist">
+                <h3 class="title">Visist</h3>
+                <div class="section-wrapper">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </div>
+            </div> -->
+
+            <div class="section" id="Follow">
+                <h3 class="title">Follow</h3>
+                <div class="section-wrapper">
+                    <a href="https://www.facebook.com/Cntpcb-105156764400026/">Facebook</a>
+                    <a href="https://www.olx.ro/oferta/asamblare-configurare-suport-tehnic-pc-modding-IDcyDNE.html">Olx</a>
+                    <a href="https://twitter.com/CTpcb">Twitter</a>
+                </div>
+            </div>
+
+            <div class="section" id="Legal">
+                <h3 class="title">Legal</h3>
+                <div class="section-wrapper">
+                    <a href="./Terms_and_Conditions.html">Terms</a>
+                    <a href="./Privacy_Policy.html">Conditions</a>
+                </div>
+            </div>
+
+            <div class="section" id="Contact">
+                <h3 class="title">Contact</h3>
+                <div class="section-wrapper">
+                    <div >CnTPCB@gmail.com</div>
+                    <div >0741549772</div>
+                    <div >0722755212</div>
+                </div>
+            </div>
+
+            <div class="section" id="Footer-Logo">
+                <div class="footer-logo-picture">
+                    <img src="./Logo/PClogo-ForBlackBackground.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./JS/header.js"></script>
+</body>
+
+</html>

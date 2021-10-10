@@ -1,0 +1,692 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: #ece8e8;
+}
+
+/* content css */
+#Content {
+    position: relative;
+    width: 100%;
+}
+
+#Content-Wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* section 1 */
+#Section1 {
+    position: relative;
+    overflow: hidden;
+    z-index: 89;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 700px;
+    background: #7a1c71;
+    border-top: solid 3px #581365;
+}
+
+canvas {
+    position: absolute;
+}
+
+#Section1-Wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+}
+
+.main-img-wrapper {
+    position: relative;
+    width: 31%;
+    min-width: 450px;
+    max-width: 700px;
+    height: auto;
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.main-img-wrapper>img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+
+.text-wrapper {
+    position: relative;
+    width: 35%;
+    max-width: 700px;
+    height: auto;
+    margin-right: auto;
+}
+
+.text-wrapper>.text {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 350%;
+    color: white;
+
+}
+
+.text-wrapper>.about-activator {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    display: block;
+    text-align: start;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 110%;
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 0px 5px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    z-index: 90;
+    text-decoration: none;
+}
+
+.text-wrapper>.about-activator::after {
+    position: relative;
+    display: none;
+    width: 20px;
+    height: 20px;
+    content: url(../Svg_items/right-chevron.svg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    margin: auto;
+    margin-top: 5px;
+}
+
+.text-wrapper>.about-activator:hover {
+    background: rgba(0, 0, 0, .5)
+}
+
+.text-wrapper>.about-activator:hover::after {
+    display: block;
+}
+.text-wrapper>.about-activator:focus::after {
+    display: none;
+}
+.text-wrapper>.about-activator:focus{
+    outline: none;
+}
+
+
+
+
+
+
+/* section 1 end */
+
+/* section 2*/
+#Section2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#Section2-Wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+}
+
+.services-link {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    background: #581365;
+    margin: 1%;
+    background: rgb(154, 154, 154);
+    background: -webkit-gradient(linear,
+            left top, right top,
+            from(rgba(154, 154, 154, 1)),
+            color-stop(64%, rgba(183, 217, 215, 1)),
+            to(rgb(10, 29, 92)));
+    background: linear-gradient(90deg,
+            rgba(154, 154, 154, 1) 0%,
+            rgba(183, 217, 215, 1) 64%,
+            rgb(10, 29, 92) 100%);
+}
+
+.services-link>a::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    content: "See more";
+    background: #ece8e8;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 120%;
+    padding: 20px;
+    opacity: 0;
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+
+}
+
+.services-link>a>img {
+    position: relative;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-clip-path: polygon(0% 0%, 60% 0%, 100% 40%, 100% 100%, 0 100%);
+            clip-path: polygon(0% 0%, 60% 0%, 100% 40%, 100% 100%, 0 100%);
+}
+
+.services-link:hover img {
+    -webkit-filter: blur(3px);
+            filter: blur(3px);
+}
+.services-link:hover ::after {
+    opacity: 1;
+}
+
+/* section 2 end */
+
+/* section 3*/
+#Section3 {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+}
+
+#Section3-Wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    background: rgb(0, 0, 0);
+    background: -webkit-gradient(linear,
+            left top, left bottom,
+            color-stop(5%, rgba(0, 0, 0, 1)),
+            color-stop(62%, rgba(66, 66, 66, 1)),
+            to(rgba(102, 102, 102, 1)));
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 1) 5%,
+            rgba(66, 66, 66, 1) 62%,
+            rgba(102, 102, 102, 1) 100%);
+}
+
+#Section3-Wrapper>p {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 90%;
+    color: white;
+    text-align: center;
+    font-size: 120%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+#Section3-Wrapper>div {
+    --ScaleManipulator: 1.5;
+
+    --ScaleBX: calc(300px * var(--ScaleManipulator));
+    --ScaleBY: calc(250px * var(--ScaleManipulator));
+    --Margin: calc(20px * var(--ScaleManipulator));
+    --ScaleSX: calc(150px * var(--ScaleManipulator));
+    --ScaleSY: calc(115px * var(--ScaleManipulator));
+    --ScaleLX1: calc(200px * var(--ScaleManipulator));
+    --ScaleLY1: calc(365px * var(--ScaleManipulator));
+    --ScaleLX2: calc(370px * var(--ScaleManipulator));
+    --ScaleLY2: calc(135px * var(--ScaleManipulator));
+    --TriangleX: calc(150px * var(--ScaleManipulator));
+    --TriangleY: calc(95px * var(--ScaleManipulator));
+
+    position: relative;
+    width: calc(var(--ScaleBX) + var(--Margin) + var(--ScaleSX) + var(--Margin) + var(--ScaleLX1));
+    height: calc(var(--ScaleBY) + var(--Margin) + var(--ScaleBY));
+}
+
+#BigBox1 {
+    position: absolute;
+    -webkit-transform: translate(-50% -50%);
+            transform: translate(-50% -50%);
+    width: var(--ScaleBX);
+    height: var(--ScaleBY);
+    background: white;
+}
+
+#BigBox2 {
+    position: absolute;
+    top: calc(var(--ScaleBY) + var(--Margin));
+
+    -webkit-transform: translate(-50% -50%);
+
+            transform: translate(-50% -50%);
+    width: var(--ScaleBX);
+    height: var(--ScaleBY);
+    background: white;
+}
+
+#SmallBox1 {
+    position: absolute;
+
+    left: calc(var(--ScaleBX) + var(--Margin));
+    -webkit-transform: translate(-50% -50%);
+            transform: translate(-50% -50%);
+    width: var(--ScaleSX);
+    height: var(--ScaleSY);
+    background: white;
+}
+
+#SmallBox2 {
+    position: absolute;
+    top: calc(var(--ScaleSY) + var(--Margin));
+    left: calc(var(--ScaleBX) + var(--Margin));
+    -webkit-transform: translate(-50% -50%);
+            transform: translate(-50% -50%);
+    width: var(--ScaleSX);
+    height: var(--ScaleSY);
+    background: white;
+}
+
+#LongBox1 {
+    position: absolute;
+    left: calc(var(--ScaleBX) + var(--Margin) + var(--ScaleSX) + var(--Margin));
+    -webkit-transform: translate(-50% -50%);
+            transform: translate(-50% -50%);
+    width: var(--ScaleLX1);
+    height: var(--ScaleLY1);
+    background: white;
+}
+
+#LongBox2 {
+    position: absolute;
+    top: calc(var(--ScaleSY) + var(--Margin) + var(--ScaleSY) + var(--Margin) + var(--ScaleSY));
+    left: calc(var(--ScaleBX) + var(--Margin));
+    -webkit-transform: translate(-50% -50%);
+            transform: translate(-50% -50%);
+    width: var(--ScaleLX2);
+    height: var(--ScaleLY2);
+    background: white;
+}
+
+#Triangle {
+    position: absolute;
+    top: calc(var(--ScaleBY) + var(--Margin));
+    left: calc(var(--ScaleBX) + var(--Margin));
+    -webkit-transform: translate(-50% -50%);
+            transform: translate(-50% -50%);
+    background: #581365;
+    width: var(--TriangleX);
+    height: var(--TriangleY);
+    -webkit-clip-path: polygon(0 50%, 100% 0, 70% 100%);
+            clip-path: polygon(0 50%, 100% 0, 70% 100%);
+}
+
+.picture-wrapper>img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+
+
+}
+/* section 3 end */
+
+
+/* section 4 */
+#Section4{
+    position: relative;
+    width: 100%;
+    height: 1100px;
+}
+#Section4-Wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+}
+#Section4-Text-Wrapper{
+    position: relative;
+    margin-left: auto;
+    margin-right: 50px;
+    width: 40%;
+    height: 80%;
+}
+.section4-title{
+    position: relative;
+    margin: 10px;
+    margin-bottom: 30px;
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 110%;
+}
+.section4-text{
+    position: relative;
+    margin: 10px;
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 110%;
+}
+#Section4-Image-Wrapper{
+    position: relative;
+    margin-right: auto;
+    margin-left: 50px;
+    width: 40%;
+    height: 80%;
+    background: black;
+    background: url(../Pc-pictures-done/indexSection4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* section 4 end */
+
+@media screen and (max-width: 1060px) {
+    #Section3 {
+        position: relative;
+        width: 100%;
+        height: 100vw;
+    }
+
+    #Section3-Wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+                align-items: center;
+        background: rgb(0, 0, 0);
+        background: -webkit-gradient(linear,
+                left top, left bottom,
+                color-stop(5%, rgba(0, 0, 0, 1)),
+                color-stop(62%, rgba(66, 66, 66, 1)),
+                to(rgba(102, 102, 102, 1)));
+        background: linear-gradient(180deg,
+                rgba(0, 0, 0, 1) 5%,
+                rgba(66, 66, 66, 1) 62%,
+                rgba(102, 102, 102, 1) 100%);
+    }
+
+    #Section3-Wrapper>div {
+        --ScaleManipulator: 1.2;
+    }
+    .section4-text{
+        position: relative;
+        margin: 10px;
+        display: block;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    #Section1-Wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+    }
+
+    .main-img-wrapper {
+        position: relative;
+        width: 50%;
+        min-width: 300px;
+        height: auto;
+        margin: 40px auto;
+    }
+
+    .main-img-wrapper>img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        -o-object-fit: contain;
+           object-fit: contain;
+    }
+
+    .text-wrapper {
+        position: relative;
+        width: 90%;
+        height: auto;
+        margin: 40px auto;
+    }
+
+    .text-wrapper>.text {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+            Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 200%;
+        color: white;
+        text-align: center;
+        margin: auto;
+    }
+
+    .text-wrapper>.about-activator {
+        position: relative;
+        margin: auto;
+        height: 50px;
+        display: block;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+            Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 110%;
+        color: white;
+        background: rgba(0, 0, 0, 0);
+        border: none;
+        padding: 0px 5px;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+        z-index: 90;
+        margin-top: 20px;
+    }
+    .text-wrapper>.about-activator::after{
+        display: block;
+    }
+
+    #Section3-Wrapper>p {
+        position: absolute;
+        top: 3%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        width: 90%;
+        color: white;
+        text-align: center;
+        font-size: 105%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    }
+
+    #Section3-Wrapper>div {
+        --ScaleManipulator: 1;
+    }
+
+}
+
+@media screen and (max-width: 710px) {
+    #Section3-Wrapper>div {
+        --ScaleManipulator: 0.8;
+    }
+
+    #Section2 {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    #Section2-Wrapper {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+                align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .services-link {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background: #581365;
+        margin: 1%;
+        background: rgb(154, 154, 154);
+        background: -webkit-gradient(linear,
+                left top, right top,
+                from(rgba(154, 154, 154, 1)),
+                color-stop(64%, rgba(183, 217, 215, 1)),
+                to(rgba(182, 217, 216, 1)));
+        background: linear-gradient(90deg,
+                rgba(154, 154, 154, 1) 0%,
+                rgba(183, 217, 215, 1) 64%,
+                rgba(182, 217, 216, 1) 100%);
+    }
+    #Section4{
+        position: relative;
+        width: 100%;
+        height: 800px;
+    }
+    #Section4-Wrapper{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
+    }
+    
+    #Section4-Text-Wrapper{
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section4-title{
+        position: relative;
+        margin: 10px;
+        display: block;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 110%;
+    }
+    .section4-text{
+        position: relative;
+        margin: 10px;
+        display: block;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 100%;
+    }
+    #Section4-Image-Wrapper{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        background: black;
+        background: url(../Pc-pictures-done/indexSection4.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    #Section3-Wrapper>div {
+        --ScaleManipulator: 0.6;
+    }
+    #Section4{
+        position: relative;
+        width: 100%;
+        height: 900px;
+    }
+    
+
+
+}
+
+@media screen and (max-width: 420px) {
+    #Section3-Wrapper>div {
+        --ScaleManipulator: 0.5;
+    }
+    .section4-title{
+        position: relative;
+        margin: 10px;
+        display: block;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 100%;
+    }
+    .section4-text{
+        position: relative;
+        margin: 10px;
+        display: block;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 90%;
+    }
+    #Section4{
+        position: relative;
+        width: 100%;
+        height: 1100px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    #Section3-Wrapper>div {
+        --ScaleManipulator: 0.4;
+    }
+
+
+}
+
+
+
+/* content css end */

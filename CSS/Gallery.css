@@ -1,0 +1,67 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+#Content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, 1);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(72%, rgba(122, 28, 113, 1)), color-stop(100%, rgba(122, 28, 113, 1)));
+    background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(122, 28, 113, 1) 72%, rgba(122, 28, 113, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#7a1c71', GradientType=1);
+
+}
+
+#Content-Wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    margin: auto;
+}
+
+.pictures-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: flex;
+    
+            -webkit-box-pack: center;
+    
+                    justify-content: center;
+    flex-wrap: wrap;
+}
+.column{
+
+    position: relative;
+    width: 350px;
+    margin: 5px;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    
+            -webkit-box-pack: start;
+    
+                    justify-content: start;
+
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.picture-container {
+    position: relative;
+    width: 100%;
+    
+    
+    margin: 3px;
+}
+img{
+    position: relative;
+    width: 100%;
+    
+}

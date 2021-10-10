@@ -1,0 +1,339 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background: rgba(248, 248, 248, 0.897);
+}
+
+/* header css */
+#Header {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    z-index: 99;
+}
+
+#Header-Wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #581365;
+    -webkit-clip-path: polygon(0 0, 60% 0, 70% 60%, 0 80%);
+    clip-path: polygon(0 0, 60% 0, 70% 60%, 0 80%);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+
+}
+
+#Header-Text-Wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-left: 32%;
+    -webkit-transform: translate(-50%, -15%) rotate(-1deg);
+    transform: translate(-50%, -15%) rotate(-1deg);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+#Header-Text-Wrapper>a {
+    position: relative;
+    margin: 0 3%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 110%;
+    color: white;
+    text-decoration: none;
+    -webkit-transition-duration: 200ms;
+    transition-duration: 200ms;
+}
+
+#Header-Text-Wrapper>a:hover {
+
+    -webkit-transform: scale(1.15, 1.15);
+
+    transform: scale(1.15, 1.15);
+}
+
+.navElement {
+    position: relative;
+    width: 100%;
+}
+
+#Header-Logo-Wrapper {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    width: 150px;
+    height: 100px;
+    background: rgba(248, 248, 248, 0.897);
+}
+
+#Logo {
+    /* to change the logo dimensions modify the Header-Logo-Wrapper width */
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#Logo>.png-logo {
+    position: relative;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background: url(../Logo/PClogo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 99;
+}
+#Logo>.png-logo>a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#Header-Logo-Wrapper>#Nav-Button {
+    display: none;
+}
+
+#Header-Aux {
+    position: relative;
+    overflow: hidden;
+    z-index: 88;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 125px;
+    background: #7A1C71;
+    -webkit-clip-path: polygon(0 0, 57% 0, 70% 60.8%, 100% 83%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 57% 0, 70% 60.8%, 100% 83%, 100% 100%, 0 100%);
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* animating the mobile nav */
+    @-webkit-keyframes NavAnimationDown {
+        0% {
+            -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+        }
+
+        100% {
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px)
+        }
+    }
+
+    @keyframes NavAnimationDown {
+        0% {
+            -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+        }
+
+        100% {
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px)
+        }
+    }
+
+    @-webkit-keyframes NavAnimationUp {
+        0% {
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px)
+        }
+
+        100% {
+            -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+        }
+    }
+
+    @keyframes NavAnimationUp {
+        0% {
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px)
+        }
+
+        100% {
+            -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+        }
+    }
+
+    .hidden {
+        display: block;
+        -webkit-animation: NavAnimationUp;
+        animation: NavAnimationUp;
+        -webkit-animation-duration: 500ms;
+        animation-duration: 500ms;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    .visible {
+
+        display: block;
+        -webkit-animation: NavAnimationDown;
+        animation: NavAnimationDown;
+        -webkit-animation-duration: 500ms;
+        animation-duration: 500ms;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    .initial {
+        display: none;
+    }
+
+    /* animating the mobile nav end */
+
+    #Header {
+        position: absolute;
+        top: 125px;
+        left: 0%;
+        width: 100%;
+        height: auto;
+        margin-top: 0px;
+        z-index: 95;
+    }
+
+    #Header-Wrapper {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background: #581365;
+        -webkit-clip-path: none;
+        clip-path: none;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+
+    }
+
+    #Header-Text-Wrapper {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-left: 0%;
+        -webkit-transform: translate(0%, 0%) rotate(0deg);
+        transform: translate(0%, 0%) rotate(0deg);
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+    }
+
+    .navElement {
+        position: relative;
+        margin: 20px 0;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 110%;
+        color: white;
+    }
+
+    #Header-Logo-Wrapper {
+        position: absolute;
+        left: 0px;
+        top: 20px;
+        width: 100%;
+        height: 100px;
+        background: #999999;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    #Header-Logo-Wrapper>#Logo {
+        position: relative;
+        display: block;
+        width: 200px;
+        height: 100px;
+        z-index: 99;
+        background: #7A1C71;
+        color: white;
+        margin-left: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 120%;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    #Logo>.png-logo {
+        position: relative;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        background: url(../Logo/PClogo-mobile.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #Logo>.png-logo>a{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    #Header-Logo-Wrapper>#Nav-Button {
+        position: relative;
+        margin-left: auto;
+        display: block;
+        width: 25px;
+        height: 50px;
+        background: #7A1C71;
+        z-index: 99;
+        border: none;
+        margin-right: 20px;
+    }
+
+    #Header-Aux {
+        position: relative;
+        overflow: hidden;
+        z-index: 96;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 125px;
+        background: #7A1C71;
+        -webkit-clip-path: none;
+        clip-path: none;
+    }
+
+}
+
+
+
+/* header css end */
